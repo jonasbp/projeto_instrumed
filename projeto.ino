@@ -72,7 +72,7 @@ void loop() {
   //DHT
   umid = dht.readHumidity(); // Lê umidade
   temp2 = dht.readTemperature(); // Lê temperatura
-  umid = 1.00*umid + 0.00; // Calibração
+  umid = 1.508864035 * umid + 0.048218262; // Calibração
   //Serial.print("\n\nUmidade [%]: ");
   lcd.setCursor(0,0);
   lcd.print("Umidade DHT");
